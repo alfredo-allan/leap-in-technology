@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/leap-in-technology/static/css/main.9bacf2d6.css",
-    "main.js": "/leap-in-technology/static/js/main.ccbd54dc.js",
+    "main.js": "/leap-in-technology/static/js/main.e5a9c553.js",
     "static/js/453.3c5f9c69.chunk.js": "/leap-in-technology/static/js/453.3c5f9c69.chunk.js",
     "static/media/brand-product.jpg": "/leap-in-technology/static/media/brand-product.09158fb2c8b4aabbb0e4.jpg",
     "static/media/designer-interface.jpg": "/leap-in-technology/static/media/designer-interface.88a9b9cd6b672272dd86.jpg",
     "static/media/code.jpg": "/leap-in-technology/static/media/code.f13ad3903df0828a4f92.jpg",
     "index.html": "/leap-in-technology/index.html",
     "main.9bacf2d6.css.map": "/leap-in-technology/static/css/main.9bacf2d6.css.map",
-    "main.ccbd54dc.js.map": "/leap-in-technology/static/js/main.ccbd54dc.js.map",
+    "main.e5a9c553.js.map": "/leap-in-technology/static/js/main.e5a9c553.js.map",
     "453.3c5f9c69.chunk.js.map": "/leap-in-technology/static/js/453.3c5f9c69.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9bacf2d6.css",
-    "static/js/main.ccbd54dc.js"
+    "static/js/main.e5a9c553.js"
   ]
 }
