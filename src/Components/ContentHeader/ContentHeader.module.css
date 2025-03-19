@@ -1,0 +1,32 @@
+.carouselImage {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carouselContainer {
+    position: relative;
+}
+
+.boxesContainer {
+    display: flex;
+    flex-direction: column;
+    /* Coloca os boxes em coluna */
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    /* Ajuste a posição horizontal conforme necessário */
+    transform: translateY(-50%);
+    width: 30%;
+    /* Ajuste a largura conforme necessário */
+}
+
+.overlayBox {
+    text-align: center;
+    background-color: var(--primary-purple);
+    padding: 20px;
+    /* border-radius: 10px;
+    margin-bottom: 10px; */
+    /* Adiciona espaço entre os boxes */
+    color: white;
+    font-family: var(--primary-font);
+}

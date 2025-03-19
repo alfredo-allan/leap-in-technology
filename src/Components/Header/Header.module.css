@@ -1,0 +1,12 @@
+.header {
+    background-color: var(--primary-purple) !important;
+
+    a,
+    .navbar-toggler.collapsed,
+    .navbar-toggler-icon {
+        color: white !important;
+        font-family: var(--primary-font) !important;
+
+    }
+
+}
