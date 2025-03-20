@@ -1,53 +1,52 @@
-import React, { useState } from 'react';
-import { Carousel, Image } from 'react-bootstrap';
-import code from '../../Assets/Img/code.jpg';
-import designerInterface from '../../Assets/Img/designer-interface.jpg';
-import brandProduct from '../../Assets/Img/brand-product.jpg';
+import React, { useState, useEffect } from 'react';
 import styles from './ContentHeader.module.css';
+
+interface CarouselTextProps {
+    text: {
+        title: string;
+        description: string;
+    };
+}
 
 const ContentHeader = () => {
     const [index, setIndex] = useState(0);
 
-    const handleSelect = (selectedIndex: number) => {
-        setIndex(selectedIndex);
-    };
-
     const carouselData = [
         {
-            image: code,
             title: 'Desenvolvimento de Software',
             description: 'Soluções personalizadas para suas necessidades.',
         },
         {
-            image: designerInterface,
             title: 'Design de Interface',
             description: 'Interfaces intuitivas e atraentes.',
         },
         {
-            image: brandProduct,
             title: 'Branding e Produto',
             description: 'Fortalecemos sua marca e seus produtos.',
         },
     ];
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((prevIndex) => (prevIndex + 1) % carouselData.length);
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, [carouselData.length]);
+
     return (
         <div className={styles.carouselContainer}>
-            <Carousel activeIndex={index} onSelect={handleSelect} fade interval={3000}>
-                {carouselData.map((item, idx) => (
-                    <Carousel.Item key={idx}>
-                        <Image className={`${styles.carouselImage} d-block w-100`} src={item.image} alt={`Slide ${idx + 1}`} />
-                    </Carousel.Item>
-                ))}
-            </Carousel>
 
-            {carouselData.map((item, idx) => (
-                index === idx && (
-                    <div key={idx} className={styles.overlayBox}>
-                        <h1>{item.title}</h1>
-                        <p>{item.description}</p>
-                    </div>
-                )
-            ))}
+            <CarouselText text={carouselData[index]} />
+        </div>
+    );
+};
+
+const CarouselText = ({ text }: CarouselTextProps) => {
+    return (
+        <div className={styles.overlayBox}>
+            <h1 className={styles.title}>{text.title}</h1>
+            <p className={styles.description}>{text.description}</p>
         </div>
     );
 };

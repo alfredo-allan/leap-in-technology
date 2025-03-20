@@ -1,32 +1,36 @@
-.carouselImage {
-    height: 400px;
-    object-fit: cover;
-}
-
 .carouselContainer {
     position: relative;
+    height: 500px;
+    /* Ajuste a altura conforme necessário */
+    overflow: hidden;
 }
 
-.boxesContainer {
-    display: flex;
-    flex-direction: column;
-    /* Coloca os boxes em coluna */
+
+
+.overlayBox {
     position: absolute;
     top: 50%;
-    left: 70%;
-    /* Ajuste a posição horizontal conforme necessário */
-    transform: translateY(-50%);
-    width: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: white;
+    width: 80%;
     /* Ajuste a largura conforme necessário */
 }
 
-.overlayBox {
-    text-align: center;
-    background-color: var(--primary-purple);
-    padding: 20px;
-    /* border-radius: 10px;
-    margin-bottom: 10px; */
-    /* Adiciona espaço entre os boxes */
-    color: white;
-    font-family: var(--primary-font);
+
+.title {
+    font-size: 134px;
+    font-weight: bolder;
+    text-align: left;
+    font-family: var(--primary-font) !important;
+
+}
+
+.description {
+    font-size: 26px;
+    display: flex;
+    font-weight: unset;
+    font-family: var(--primary-font) !important;
 }

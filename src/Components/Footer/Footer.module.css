@@ -6,7 +6,7 @@
     justify-content: center;
     width: 100%;
     /* Garante que o footer ocupe toda a largura */
-    background-color: var(--primary-purple) !important;
+    background-color: var(--dark-blue) !important;
     color: white;
     font-family: var(--primary-font) !important;
 }
