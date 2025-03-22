@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap'; // Importa Row e Col
 import './AboutContent.css';
-import lampIco from '../../Assets/Img/ico-lamp-removebg-preview.png'
+import lampIco from '../../Assets/Img/ico-lamp.png'
 const AboutContent = () => {
   return (
     <Container className='about-container'>
