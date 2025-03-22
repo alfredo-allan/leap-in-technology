@@ -8,7 +8,7 @@ const RoutesComponent = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/leap-in-technology" element={<HomePage />} />
-                <Route path="/about" element={<AboutPage />} /> {/* Adicione a rota para AboutPage */}
+                <Route path="/about" element={<AboutPage />} />
             </Routes>
         </BrowserRouter>
     );
