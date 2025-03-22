@@ -1,0 +1,40 @@
+.title-about-text {
+    font-family: var(--primary-font);
+    font-size: 50px;
+    margin-bottom: 40px;
+    text-align: left;
+    margin-top: 25px;
+
+}
+
+.paragraph-about-text {
+    font-family: var(--primary-font);
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.about-container {
+    margin-bottom: 20vh;
+}
+
+.ico-lamp {
+    width: 55px;
+    animation: pulse 1s infinite ease-in-out;
+    /* Adiciona a animação */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1.05);
+        /* Ajuste o valor para uma pulsação mais ou menos intensa */
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

@@ -5,28 +5,28 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    /* Garante que o footer ocupe toda a largura */
     background-color: var(--dark-blue) !important;
     color: white;
     font-family: var(--primary-font) !important;
-}
-
-/* Opcional: Adicione estilos para o contêiner principal para garantir altura mínima */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-}
-
-main {
-    flex: 1;
 }
 
 .stickyFooter {
     position: absolute;
 }
 
-.absoluteFooter {
-    position: absolute;
+.footerImage {
+    max-width: 35px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.imagesContainer {
+    display: flex;
+    align-items: center;
+}
+
+.footerText {
+    text-align: center;
+    margin-left: 60% !important;
+    text-wrap: nowrap !important;
 }
