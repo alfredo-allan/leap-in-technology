@@ -30,3 +30,25 @@
     margin-left: 60% !important;
     text-wrap: nowrap !important;
 }
+
+@media (max-width: 768px) {
+    .footerImage {
+        width: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagesContainer {
+        justify-content: center;
+        margin: 0% auto;
+    }
+
+    .footerText {
+        display: flex;
+        margin: 2% 16px;
+        margin-left: 16px;
+        font-size: 11px;
+        justify-content: end;
+        flex-flow: inherit;
+    }
+}

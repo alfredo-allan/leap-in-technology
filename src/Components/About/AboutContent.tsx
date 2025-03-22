@@ -1,14 +1,13 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap'; // Importa Row e Col
 import './AboutContent.css';
-import icoLamp from '../../Assets/Img/ico-lamp-removebg-preview.png'
-
+import lampIco from '../../Assets/Img/ico-lamp-removebg-preview.png'
 const AboutContent = () => {
   return (
     <Container className='about-container'>
       <Row className="justify-content-center"> {/* Adiciona Row e centraliza o conteúdo */}
         <Col xs={12} md={10} lg={8}> {/* Define a largura do conteúdo em diferentes telas */}
-          <h2 className='title-about-text'>Sobre Nós <img className='ico-lamp' src={icoLamp} alt="" /></h2>
+          <h2 className='title-about-text'>Sobre Nós <img className='ico-lamp' src={lampIco} alt="" /></h2>
           <p className='paragraph-about-text'>
             Unimos criatividade e tecnologia para transformar ideias em soluções que inspiram e impulsionam negócios. Somos uma equipe apaixonada por design gráfico e desenvolvimento de software, dedicada a criar experiências digitais que encantam e entregam resultados excepcionais.
           </p>

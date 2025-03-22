@@ -12,7 +12,6 @@
 
 .formControl {
     background-color: black !important;
-    /* Cor de fundo dos inputs */
     color: var(--purple-primary) !important;
     border: 1px solid var(--purple-primary) !important;
     font-family: var(--primary-font) !important;
@@ -40,4 +39,9 @@
 
 .btnPrimary:active {
     background-color: #9370DB !important;
+}
+
+.form-control::placeholder {
+    color: #545454 !important;
+    opacity: 0.1 !important;
 }

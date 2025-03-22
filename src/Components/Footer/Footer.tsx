@@ -20,7 +20,7 @@ const Footer = () => {
                         <div className={styles.imagesContainer}>
                             <img src={jsIco} alt="JavaScript" className={styles.footerImage} />
                             <img src={rectIco} alt="React" className={styles.footerImage} />
-                            <img id='botstrap-ico' src={botstrapIco} alt="Bootstrap" className={styles.footerImage} />
+                            <img src={botstrapIco} alt="Bootstrap" className={styles.footerImage} />
                             <img src={gitIco} alt="GitHub" className={styles.footerImage} />
                             <img src={pyIco} alt="Python" className={styles.footerImage} />
                             <img src={linuxIco} alt="Linux" className={styles.footerImage} />

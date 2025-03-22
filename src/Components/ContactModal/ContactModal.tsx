@@ -42,7 +42,8 @@ const ContactModal: React.FC<ContactModalProps> = ({ show, onHide }) => {
     return (
         <Modal show={show} onHide={onHide}>
             <Modal.Header closeButton className={styles.modalHeader}>
-                <Modal.Title>Entre em contato  <br /> <b style={{ fontSize: '14px', fontWeight: 'bold' }}>Leap In Technology ©</b></Modal.Title>            </Modal.Header>
+                <Modal.Title>Entre em contato <br /> <b style={{ fontSize: '14px', fontWeight: 'bold' }}>Leap In Technology ©</b></Modal.Title>
+            </Modal.Header>
             <Modal.Body className={styles.modalContent}>
                 <Form>
                     <Form.Group>
@@ -72,7 +73,8 @@ const ContactModal: React.FC<ContactModalProps> = ({ show, onHide }) => {
                             placeholder="Digite seu email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            className={styles.formControl} />
+                            className={styles.formControl}
+                        />
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Mensagem</Form.Label>

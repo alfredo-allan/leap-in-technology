@@ -34,3 +34,18 @@
     font-weight: unset;
     font-family: var(--primary-font) !important;
 }
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 29px;
+        text-wrap: nowrap;
+        text-align: left;
+        margin: 10px -26px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin: 1px -26px;
+    }
+
+}

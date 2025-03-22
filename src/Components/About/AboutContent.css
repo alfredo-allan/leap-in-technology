@@ -38,3 +38,17 @@
         transform: scale(1);
     }
 }
+
+@media (max-width: 768px) {
+    .title-about-text {
+        font-size: 45px;
+    }
+
+    .paragraph-about-text {
+        font-family: var(--primary-font);
+        font-size: 20px;
+        letter-spacing: 3px;
+        text-align: left;
+        line-height: 1.8;
+    }
+}
