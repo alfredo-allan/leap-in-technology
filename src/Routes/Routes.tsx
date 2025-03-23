@@ -7,7 +7,7 @@ const RoutesComponent = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/leap-in-technology" element={<HomePage />} />
+                <Route path="/" element={<HomePage />} /> {/* Mudou de /leap-in-technology para / */}
                 <Route path="about" element={<AboutPage />} />
             </Routes>
         </BrowserRouter>
